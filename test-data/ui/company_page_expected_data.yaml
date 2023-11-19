@@ -1,0 +1,29 @@
+expected_values:
+  HQ: San Francisco
+  Founded: '2007'
+  Size: 650+
+  Consulting_Offices:
+    - Amsterdam
+    - Berlin
+    - Copenhagen
+    - Geneva
+    - London
+    - Los Angeles
+    - Madrid
+    - New York
+    - Seattle
+    - Zürich
+  Engineering_Hubs:
+    - Banja Luka
+    - Belgrade
+    - Nis
+    - Novi Sad
+    - Santo Domingo
+    - Sarajevo
+    - Skopje
+  Clients: 200+
+  Certifications:
+    - AWS Certified Partner
+    - ISO 27001:2013
+    - ISO 9001:2015
+  Url: https://symphony.is/about-us/company

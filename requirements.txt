@@ -1,0 +1,8 @@
+selenium~=4.15.2
+selenium-page-factory
+pytest~=7.4.3
+requests==2.31.0
+faker~=20.0.3
+click
+pyyaml~=6.0.1
+allure-pytest
