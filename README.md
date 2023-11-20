@@ -88,7 +88,9 @@ allure generate results -o reports
 Run tests into docker container:
 
 ```bash
-docker build -t test_demo . 
+docker build -t test_demo .
+``` 
+```bash
 docker run -it test_demo (Note: use --rm flag if you want to remove container automatically after tests are finished)
 ```
 
