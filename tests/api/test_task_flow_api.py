@@ -1,7 +1,10 @@
+import pytest
+
 from tests.api.common.api import signup_user, login_user
 from tests.api.common.helpers import create_post, create_comment, get_comments
 
 
+@pytest.mark.api
 def test_task_flow():
     # Register user
     new_user = signup_user()

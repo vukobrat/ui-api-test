@@ -1,8 +1,9 @@
+import pytest
 import requests
 
 from config.config import ENDPOINT_LOGIN
 
-
+@pytest.mark.api
 def test_login_api(user):
     user_token = user['token']
 
@@ -15,6 +16,7 @@ def test_login_api(user):
     assert response.json()['token'] == user_token
 
 
+@pytest.mark.api
 def test_login_wrong_username_api(user):
     login_data = {
         "username": '!',
@@ -25,6 +27,7 @@ def test_login_wrong_username_api(user):
     assert response.json()['success'] == False
 
 
+@pytest.mark.api
 def test_login_no_username_api(user):
     login_data = {
         "username": '',
@@ -35,6 +38,7 @@ def test_login_no_username_api(user):
     assert response.json()['username'][0] == 'This field may not be blank.'
 
 
+@pytest.mark.api
 def test_login_wrong_password_api(user):
     login_data = {
         "username": user['user']['username'],
@@ -45,6 +49,7 @@ def test_login_wrong_password_api(user):
     assert response.json()['success'] == False
 
 
+@pytest.mark.api
 def test_login_no_password_api(user):
     login_data = {
         "username": user['user']['username'],
