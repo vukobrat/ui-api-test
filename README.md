@@ -27,7 +27,7 @@ Here's an overview of the project structure:
 
 
 ## Prerequisites
-**Host:** MacOS, Chrome browser
+**Host:** MacOS, Chrome browser, python>=3.10
 
 1. Create a virtual environment using a tool you prefer. In this example, I am using Anaconda [Installation Guide](https://docs.conda.io/projects/conda/en/latest/user-guide/install/macos.html):
    - `conda create -n symph-ui python=3.11`
